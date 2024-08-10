@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suitmedia - Ideas</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <img src="assets/img/site-logo.jpg" alt="Suitmedia Logo" class="logo" />
+        <nav>
+          <button id="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="nav-menu">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#ideas" class="active">Ideas</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="banner" class="parallax-banner">
+        <div class="banner-content">
+          <h1>Ideas</h1>
+          <p>Where all our great things begin</p>
+        </div>
+      </section>
+
+      <section id="ideas-list" class="container">
+        <div class="controls">
+          <div id="showing-info"></div>
+          <div class="filters">
+            <div class="filter-group">
+              <label for="show-per-page">Show per page:</label>
+              <select id="show-per-page">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="sort-by">Sort by:</label>
+              <select id="sort-by">
+                <option value="-published_at">Newest</option>
+                <option value="published_at">Oldest</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="ideas-grid"></div>
+
+        <nav id="pagination"></nav>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Suitmedia. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
